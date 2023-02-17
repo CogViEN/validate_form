@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <form>
+        Tên
+        <input type="text" id="ten">
+        <span id="error_ten" class="loi"></span>
+        <br>
+        Ngày sinh
+        <input type="date" id="ngaySinh">
+        <span id="error_ngaySinh" class="loi"></span>
+        <br>
+        Giới tính
+        <input type="radio" name="gioiTinh">Nam
+        <input type="radio" name="gioiTinh">Nữ
+        <span id="error_gioiTinh" class="loi"></span>
+        <br>
+        Email
+        <input type="email" id="email">
+        <span id="error_email" class="loi"></span>
+        <br>
+        Mật khẩu
+        <input type="password" id="matKhau">
+        <input type="checkbox" onclick="showPW()">Show Password
+        <span id="error_mk" class="loi"></span>
+        <br>
+        Lớp
+        <select>
+            <option>Lập trình</option>
+            <option>Bảo mật</option>
+        </select>
+        <br>
+        <button type="submit" onclick="return kiemtra()">Đăng kí</button>
+    </form>
+    <script src="./index.js"></script>
+</body>
+</html>
